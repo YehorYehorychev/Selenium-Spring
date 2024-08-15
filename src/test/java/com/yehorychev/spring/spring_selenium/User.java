@@ -14,6 +14,7 @@ public class User {
         this.salary = salary;
     }*/
 
+    // Setter methods Dependency Injection functionality
     @Autowired
     public void setAddress(Address address) {
         this.address = address;
