@@ -14,8 +14,11 @@ class SpringSeleniumApplicationTests {
 	@Value("${PATH}")
 	private String path;
 
+	@Value("${spring.application.name}")
+	private String appName;
+
 	@Test
 	void contextLoads() {
-		System.out.println(this.path);
+		System.out.println(this.appName);
 	}
 }
