@@ -1,14 +1,13 @@
 package com.yehorychev.spring.spring_selenium;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Salary {
-    private int amount;
 
-    public Salary() {
-        this.amount = 1000;
-    }
+    @Value("${amount:500}")
+    private int amount;
 
     public int getAmount() {
         return amount;
