@@ -9,7 +9,6 @@ public class Address {
     @Value("${street}")
     private String street;
 
-
     public String getStreet() {
         return street;
     }
