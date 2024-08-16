@@ -6,80 +6,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class User {
 
-    private Address address;
-    private Salary salary;
-
-    public User(Address address, Salary salary) {
-        this.address = address;
-        this.salary = salary;
-    }
-
-    public void printDetails() {
-        System.out.println("Address: " + this.address.getStreet());
-        System.out.println("Salary: " + this.salary.getAmount());
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* @Autowired
+    @Autowired
     private Address address;
     @Autowired
     private Salary salary;
 
-
-    public void printDetails() {
-        System.out.println("Address: " + this.address.getStreet());
-        System.out.println("Salary: " + this.salary.getAmount());
-    }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*public User(Address address, Salary salary) {
+  /*  public User(Address address, Salary salary) {
         this.address = address;
         this.salary = salary;
     }*/
 
     // Setter methods Dependency Injection functionality
 
-    /*   @Autowired
+  /*  @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
@@ -89,8 +28,8 @@ public class User {
         this.salary = salary;
     }*/
 
-    /*public void printDetails() {
+    public void printDetails() {
         System.out.println("Address: " + this.address.getStreet());
         System.out.println("Salary: " + this.salary.getAmount());
-    }*/
+    }
 }
