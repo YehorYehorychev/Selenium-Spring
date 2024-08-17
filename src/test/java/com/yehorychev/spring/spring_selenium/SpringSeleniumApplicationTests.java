@@ -17,5 +17,6 @@ class SpringSeleniumApplicationTests {
     @Test
     void contextLoads() {
         System.out.println(faker.name().firstName());
+        this.user.printDetails();
     }
 }
