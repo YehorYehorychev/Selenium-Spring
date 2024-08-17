@@ -42,13 +42,14 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Faker Library -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
 
-		<!-- Selenium and TestNG -->
+		<!-- Selenium and TestNG, Cucumber -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
