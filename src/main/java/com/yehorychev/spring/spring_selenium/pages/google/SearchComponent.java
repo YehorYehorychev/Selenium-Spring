@@ -1,6 +1,7 @@
 package com.yehorychev.spring.spring_selenium.pages.google;
 
 import com.yehorychev.spring.spring_selenium.pages.Base;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -16,6 +17,7 @@ public class SearchComponent extends Base {
 
     public void search(final String keyword) {
         this.searchBox.sendKeys(keyword);
+        this.searchBox.sendKeys(Keys.TAB);
         this.searchButtons
                 .stream()
                 .filter(e -> e.isDisplayed() && e.isEnabled())
