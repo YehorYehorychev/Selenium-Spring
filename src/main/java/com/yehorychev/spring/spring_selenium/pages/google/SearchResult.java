@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SearchResult extends Base {
 
-    @FindBy(css = "")
+    @FindBy(css = "div.g")
     private List<WebElement> results;
 
     public int getCount() {
