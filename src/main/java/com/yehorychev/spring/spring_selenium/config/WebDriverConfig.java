@@ -13,7 +13,7 @@ import java.time.Duration;
 @Configuration
 public class WebDriverConfig {
 
-    @Value("${default.timeout:20}")
+    @Value("${default.timeout}")
     private int timeout;
 
     @Bean

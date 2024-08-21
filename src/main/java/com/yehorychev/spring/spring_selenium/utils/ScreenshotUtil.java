@@ -10,6 +10,8 @@ import org.springframework.util.FileCopyUtils;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Component
 public class ScreenshotUtil {
@@ -17,17 +19,20 @@ public class ScreenshotUtil {
     @Autowired
     private TakesScreenshot driver;
 
-    @Value("${screenshot.path}/img.png")
+    @Value("${screenshot.path}")
     private Path path;
 
     public void takeScreenshot() {
         File sourceFile = this.driver.getScreenshotAs(OutputType.FILE);
         try {
-            File screenshotDirectory = this.path.getParent().toFile();
+            File screenshotDirectory = this.path.toFile();
             if (!screenshotDirectory.exists()) {
                 screenshotDirectory.mkdirs();
             }
-            FileCopyUtils.copy(sourceFile, this.path.toFile());
+            String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+            String uniqueImgName = "screenshot_" + timestamp.replace(":", "-")
+                    .replace("/", "-") + ".png";
+            FileCopyUtils.copy(sourceFile, this.path.resolve(uniqueImgName).toFile());
         } catch (IOException e) {
             e.printStackTrace();
         }
