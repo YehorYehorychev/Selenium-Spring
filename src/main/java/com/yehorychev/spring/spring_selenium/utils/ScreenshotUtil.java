@@ -1,9 +1,11 @@
 package com.yehorychev.spring.spring_selenium.utils;
 
+import jakarta.annotation.PostConstruct;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.springframework.util.FileCopyUtils;
 
@@ -13,6 +15,7 @@ import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Lazy
 @Component
 public class ScreenshotUtil {
 
