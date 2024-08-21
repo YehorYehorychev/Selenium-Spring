@@ -23,6 +23,10 @@ public class ScreenshotUtil {
     public void takeScreenshot() {
         File sourceFile = this.driver.getScreenshotAs(OutputType.FILE);
         try {
+            File screenshotDirectory = this.path.getParent().toFile();
+            if (!screenshotDirectory.exists()) {
+                screenshotDirectory.mkdirs();
+            }
             FileCopyUtils.copy(sourceFile, this.path.toFile());
         } catch (IOException e) {
             e.printStackTrace();
