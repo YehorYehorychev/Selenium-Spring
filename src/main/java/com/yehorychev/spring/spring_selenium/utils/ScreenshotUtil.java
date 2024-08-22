@@ -1,6 +1,5 @@
 package com.yehorychev.spring.spring_selenium.utils;
 
-import jakarta.annotation.PostConstruct;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
