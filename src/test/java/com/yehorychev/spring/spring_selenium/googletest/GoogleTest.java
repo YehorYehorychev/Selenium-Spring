@@ -22,7 +22,7 @@ public class GoogleTest extends SpringBaseTestNGTest {
         this.googlePage.goTo();
         Assert.assertTrue(this.googlePage.isLoaded());
 
-        this.googlePage.getSearchComponent().search("Spring Boot");
+        this.googlePage.getSearchComponent().search("Environment: ");
         Assert.assertTrue(this.googlePage.getSearchResult().isLoaded());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
         this.screenshotUtil.takeScreenshot();
