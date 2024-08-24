@@ -20,9 +20,6 @@ import java.time.Duration;
 @Profile("!remote")
 public class WebDriverConfig {
 
-    @Value("${default.timeout}")
-    private int timeout;
-
     @Bean
     @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver() {
@@ -35,10 +32,5 @@ public class WebDriverConfig {
     public WebDriver chromeDriver() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
-    }
-
-    @Bean
-    public WebDriverWait webDriverWait(WebDriver driver) {
-        return new WebDriverWait(driver, Duration.ofSeconds(this.timeout));
     }
 }
