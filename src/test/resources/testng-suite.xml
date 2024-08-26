@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="MyTestSuite">
-    <test name="GoogleTests">
+<suite name="MyTestSuite" parallel="tests">
+    <test name="GoogleTest1">
         <classes>
             <class name="com.yehorychev.spring.spring_selenium.googletest.FirstGoogleTest"/>
         </classes>
     </test>
-    <test name="GoogleTests">
+    <test name="GoogleTest2">
         <classes>
             <class name="com.yehorychev.spring.spring_selenium.googletest.SecondGoogleTest"/>
         </classes>
