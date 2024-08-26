@@ -1,4 +1,4 @@
-package com.yehorychev.spring.spring_selenium.annotation;
+package com.yehorychev.spring.spring_selenium.annotations;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
@@ -12,5 +12,5 @@ import java.lang.annotation.*;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
-public @interface Page {
+public @interface PageFragment {
 }
