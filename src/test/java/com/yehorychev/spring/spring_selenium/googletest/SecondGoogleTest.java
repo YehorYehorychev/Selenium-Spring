@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Lazy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GoogleTest extends SpringBaseTestNGTest {
+public class SecondGoogleTest extends SpringBaseTestNGTest {
 
     @Autowired
     private GooglePage googlePage;
@@ -22,7 +22,7 @@ public class GoogleTest extends SpringBaseTestNGTest {
         this.googlePage.goTo();
         Assert.assertTrue(this.googlePage.isLoaded());
 
-        this.googlePage.getSearchComponent().search("Spring Boot");
+        this.googlePage.getSearchComponent().search("Selenium");
         Assert.assertTrue(this.googlePage.getSearchResult().isLoaded());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
         this.screenshotUtil.takeScreenshot();
