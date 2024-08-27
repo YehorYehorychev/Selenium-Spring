@@ -1,4 +1,7 @@
 package com.yehorychev.spring.spring_selenium.config;
 
-public class BrowserScope {
+import org.springframework.context.support.SimpleThreadScope;
+
+public class BrowserScope extends SimpleThreadScope {
+
 }
