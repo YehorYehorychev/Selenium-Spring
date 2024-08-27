@@ -1,5 +1,6 @@
 package com.yehorychev.spring.spring_selenium.utils;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
