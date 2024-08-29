@@ -1,4 +1,4 @@
-package com.yehorychev.spring.spring_selenium.config;
+package com.yehorychev.spring.spring_selenium.kelvin.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;

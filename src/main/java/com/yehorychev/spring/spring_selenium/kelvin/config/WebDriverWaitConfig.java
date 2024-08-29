@@ -1,6 +1,6 @@
-package com.yehorychev.spring.spring_selenium.config;
+package com.yehorychev.spring.spring_selenium.kelvin.config;
 
-import com.yehorychev.spring.spring_selenium.annotations.LazyConfiguration;
+import com.yehorychev.spring.spring_selenium.kelvin.annotations.LazyConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;

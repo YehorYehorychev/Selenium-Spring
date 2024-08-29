@@ -2,7 +2,7 @@ package com.yehorychev.spring.spring_selenium.googletest;
 
 import com.yehorychev.spring.spring_selenium.SpringBaseTestNGTest;
 import com.yehorychev.spring.spring_selenium.pages.google.GooglePage;
-import com.yehorychev.spring.spring_selenium.utils.ScreenshotUtil;
+import com.yehorychev.spring.spring_selenium.kelvin.service.ScreenshotService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.testng.Assert;
@@ -15,7 +15,7 @@ public class SecondGoogleTest extends SpringBaseTestNGTest {
 
     @Lazy
     @Autowired
-    private ScreenshotUtil screenshotUtil;
+    private ScreenshotService screenshotService;
 
     @Test
     public void googleTest() {
@@ -25,6 +25,6 @@ public class SecondGoogleTest extends SpringBaseTestNGTest {
         this.googlePage.getSearchComponent().search("Selenium");
         Assert.assertTrue(this.googlePage.getSearchResult().isLoaded());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
-        this.screenshotUtil.takeScreenshot();
+        this.screenshotService.takeScreenshot();
     }
 }

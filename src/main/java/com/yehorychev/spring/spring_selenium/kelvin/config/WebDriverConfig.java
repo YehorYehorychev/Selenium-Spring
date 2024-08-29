@@ -1,7 +1,7 @@
-package com.yehorychev.spring.spring_selenium.config;
+package com.yehorychev.spring.spring_selenium.kelvin.config;
 
-import com.yehorychev.spring.spring_selenium.annotations.LazyConfiguration;
-import com.yehorychev.spring.spring_selenium.annotations.ThreadScopeBean;
+import com.yehorychev.spring.spring_selenium.kelvin.annotations.LazyConfiguration;
+import com.yehorychev.spring.spring_selenium.kelvin.annotations.ThreadScopeBean;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

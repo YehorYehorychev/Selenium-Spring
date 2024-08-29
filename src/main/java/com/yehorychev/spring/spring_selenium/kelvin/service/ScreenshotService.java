@@ -1,7 +1,5 @@
-package com.yehorychev.spring.spring_selenium.utils;
+package com.yehorychev.spring.spring_selenium.kelvin.service;
 
-import com.github.javafaker.Faker;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +9,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.springframework.util.FileCopyUtils;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -20,7 +17,7 @@ import java.util.Date;
 
 @Lazy
 @Component
-public class ScreenshotUtil {
+public class ScreenshotService {
 
     @Autowired
     private ApplicationContext ctx;
