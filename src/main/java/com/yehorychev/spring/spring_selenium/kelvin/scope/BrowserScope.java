@@ -1,4 +1,4 @@
-package com.yehorychev.spring.spring_selenium.kelvin.config;
+package com.yehorychev.spring.spring_selenium.kelvin.scope;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;

@@ -1,6 +1,7 @@
 package com.yehorychev.spring.spring_selenium.googletest;
 
 import com.yehorychev.spring.spring_selenium.SpringBaseTestNGTest;
+import com.yehorychev.spring.spring_selenium.kelvin.annotations.LazyAutowired;
 import com.yehorychev.spring.spring_selenium.pages.google.GooglePage;
 import com.yehorychev.spring.spring_selenium.kelvin.service.ScreenshotService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +11,10 @@ import org.testng.annotations.Test;
 
 public class FirstGoogleTest extends SpringBaseTestNGTest {
 
-    @Autowired
+    @LazyAutowired
     private GooglePage googlePage;
 
-    @Lazy
-    @Autowired
+    @LazyAutowired
     private ScreenshotService screenshotService;
 
     @Test
