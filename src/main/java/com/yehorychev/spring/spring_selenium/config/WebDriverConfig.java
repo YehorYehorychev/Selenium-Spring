@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Scope;
 public class WebDriverConfig {
 
     @Bean
-//    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
@@ -24,7 +24,7 @@ public class WebDriverConfig {
 
     @Bean
     @Scope("browserScope")
-//    @ConditionalOnMissingBean
+    @ConditionalOnMissingBean
     public WebDriver chromeDriver() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
