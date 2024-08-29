@@ -1,4 +1,4 @@
-package com.yehorychev.spring.spring_selenium.annotations;
+package com.yehorychev.spring.spring_selenium.kelvin.annotations;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;

@@ -1,4 +1,4 @@
-package com.yehorychev.spring.spring_selenium.config;
+package com.yehorychev.spring.spring_selenium.kelvin.scope;
 
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
 package com.yehorychev.spring.spring_selenium.pages.google;
 
-import com.yehorychev.spring.spring_selenium.annotations.Page;
+import com.yehorychev.spring.spring_selenium.kelvin.annotations.Page;
 import com.yehorychev.spring.spring_selenium.pages.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
