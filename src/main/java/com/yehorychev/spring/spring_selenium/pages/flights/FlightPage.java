@@ -15,7 +15,7 @@ public class FlightPage extends Base {
     private List<WebElement> elements;
 
     public void goTo(final String url) {
-        this.driver.get(url);
+        this.driver.get(url );
     }
 
     public List<String> getLabels() {

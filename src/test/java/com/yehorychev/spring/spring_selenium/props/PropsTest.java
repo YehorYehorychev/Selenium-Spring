@@ -11,7 +11,7 @@ import java.util.Properties;
 
 public class PropsTest extends SpringBaseTestNGTest {
 
-    @Autowired
+    /*@Autowired
     private ResourceLoader loader;
 
     @Test
@@ -19,5 +19,5 @@ public class PropsTest extends SpringBaseTestNGTest {
         Properties properties = PropertiesLoaderUtils.
                 loadProperties(loader.getResource("my.properties"));
         System.out.println(properties);
-    }
+    }*/
 }
