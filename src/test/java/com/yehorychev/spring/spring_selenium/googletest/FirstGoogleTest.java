@@ -4,6 +4,7 @@ import com.yehorychev.spring.spring_selenium.SpringBaseTestNGTest;
 import com.yehorychev.spring.spring_selenium.kelvin.annotations.LazyAutowired;
 import com.yehorychev.spring.spring_selenium.pages.google.GooglePage;
 import com.yehorychev.spring.spring_selenium.kelvin.service.ScreenshotService;
+import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.testng.Assert;
