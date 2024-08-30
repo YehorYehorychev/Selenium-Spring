@@ -7,6 +7,7 @@ import org.springframework.core.io.support.PropertiesLoaderUtils;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.Properties;
 
 public class PropsTest extends SpringBaseTestNGTest {
 
@@ -15,7 +16,8 @@ public class PropsTest extends SpringBaseTestNGTest {
 
     @Test
     public void propsTest() throws IOException {
-        System.out.println(PropertiesLoaderUtils.
-                loadProperties(loader.getResource("my.properties")));
+        Properties properties = PropertiesLoaderUtils.
+                loadProperties(loader.getResource("my.properties"));
+        System.out.println(properties);
     }
 }
