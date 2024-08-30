@@ -27,5 +27,6 @@ public class FirstGoogleTest extends SpringBaseTestNGTest {
         Assert.assertTrue(this.googlePage.getSearchResult().isLoaded());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount() > 2);
         this.screenshotService.takeScreenshot();
+        this.googlePage.quitBrowser();
     }
 }

@@ -33,4 +33,8 @@ public class GooglePage extends Base {
     public boolean isLoaded() {
         return this.searchComponent.isLoaded();
     }
+
+    public void quitBrowser() {
+        this.driver.quit();
+    }
 }
