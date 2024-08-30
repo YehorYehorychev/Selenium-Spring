@@ -11,11 +11,12 @@ import java.util.stream.Collectors;
 @Page
 public class FlightPage extends Base {
 
-    @FindBy(css = "nav.rlGvde a")
+    @FindBy(css = "nav.P6Wwdb span")
     private List<WebElement> elements;
 
     public void goTo(final String url) {
         this.driver.get(url );
+        this.driver.manage().window().maximize();
     }
 
     public List<String> getLabels() {
