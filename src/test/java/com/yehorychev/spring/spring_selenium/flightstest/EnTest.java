@@ -5,5 +5,4 @@ import org.springframework.test.context.TestPropertySource;
 @TestPropertySource(properties = "language/en.properties")
 public class EnTest extends FlightTest {
 
-
 }
