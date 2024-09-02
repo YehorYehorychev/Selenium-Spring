@@ -20,4 +20,10 @@ public class WindowSwitchService {
                 .findFirst()
                 .orElseThrow(() -> new RuntimeException("No such window"));
     }
+
+    public void switchByIndex(final int index) {
+        WebDriver driver = this.ctx.getBean(WebDriver.class);
+        String[] handles = driver.getWindowHandles().toArray(new String[0]);
+        driver.switchTo().window(handles[index]);
+    }
 }
