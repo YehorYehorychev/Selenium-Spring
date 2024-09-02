@@ -31,4 +31,8 @@ public class FlightPage extends Base {
     public boolean isLoaded() {
         return this.wait.until((d) -> !this.elements.isEmpty());
     }
+
+    public void quitBrowser() {
+        this.driver.quit();
+    }
 }

@@ -20,5 +20,6 @@ public class FlightTest extends SpringBaseTestNGTest {
         Assert.assertTrue(this.flightPage.isLoaded());
 
         Assert.assertEquals(this.flightPage.getLabels(), this.appDetails.getLabels());
+        this.flightPage.quitBrowser();
     }
 }
