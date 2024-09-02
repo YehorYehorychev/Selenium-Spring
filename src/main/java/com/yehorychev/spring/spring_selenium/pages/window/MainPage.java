@@ -23,7 +23,6 @@ public class MainPage extends Base {
         }
     }
 
-
     @Override
     public boolean isLoaded() {
         return this.wait.until((d) -> this.links.isEmpty());
