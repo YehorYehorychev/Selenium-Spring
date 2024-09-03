@@ -6,9 +6,11 @@ import com.yehorychev.spring.spring_selenium.pages.window.MainPage;
 import com.yehorychev.spring.spring_selenium.pages.window.PageA;
 import com.yehorychev.spring.spring_selenium.pages.window.PageB;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.TestPropertySource;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+@TestPropertySource(properties = "browser=chrome")
 public class WindowSwitchTest  extends SpringBaseTestNGTest {
 
     @Autowired
