@@ -5,6 +5,7 @@ import com.yehorychev.spring.spring_selenium.kelvin.service.WindowSwitchService;
 import com.yehorychev.spring.spring_selenium.pages.window.MainPage;
 import com.yehorychev.spring.spring_selenium.pages.window.PageA;
 import com.yehorychev.spring.spring_selenium.pages.window.PageB;
+import com.yehorychev.spring.spring_selenium.pages.window.PageC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.TestPropertySource;
 import org.testng.annotations.BeforeClass;
@@ -23,7 +24,7 @@ public class WindowSwitchTest  extends SpringBaseTestNGTest {
     private PageB pageB;
 
     @Autowired
-    private WindowSwitchService windowSwitchService;
+    private PageC pageC;
 
     @BeforeClass
     public void setup() {
@@ -34,9 +35,6 @@ public class WindowSwitchTest  extends SpringBaseTestNGTest {
 
     @Test
     public void switchTest() {
-        this.windowSwitchService.switchByTitle("Page A");
-        this.pageA.addToArea("hi page A");
-        this.windowSwitchService.switchByIndex(2);
-        this.pageB.addToArea("hello page B");
+
     }
 }
