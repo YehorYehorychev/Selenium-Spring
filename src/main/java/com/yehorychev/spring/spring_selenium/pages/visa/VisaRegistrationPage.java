@@ -48,6 +48,11 @@ public class VisaRegistrationPage extends Base {
         this.driver.get("https://vins-udemy.s3.amazonaws.com/sb/visa/udemy-visa.html");
     }
 
+    public void setNames(String firstName, String lastName) {
+        this.firstName.sendKeys(firstName);
+        this.lastName.sendKeys(lastName);
+    }
+
     @Override
     public boolean isLoaded() {
         return false;
