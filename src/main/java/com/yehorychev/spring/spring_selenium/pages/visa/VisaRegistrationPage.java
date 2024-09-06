@@ -67,6 +67,15 @@ public class VisaRegistrationPage extends Base {
         new Select(this.month).selectByValue(localDate.getMonth().toString());
     }
 
+    public void setContactDetails(String email, String phone) {
+        this.email.sendKeys(email);
+        this.phone.sendKeys(phone);
+    }
+
+    public void setComments(String comments) {
+        this.comments.sendKeys(comments);
+    }
+
     @Override
     public boolean isLoaded() {
         return false;
