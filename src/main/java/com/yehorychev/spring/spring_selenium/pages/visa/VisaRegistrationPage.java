@@ -4,14 +4,15 @@ import com.yehorychev.spring.spring_selenium.kelvin.annotations.Page;
 import com.yehorychev.spring.spring_selenium.pages.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 @Page
 public class VisaRegistrationPage extends Base {
 
-    @FindBy(id ="first_4")
+    @FindBy(id = "first_4")
     private WebElement firstName;
 
-    @FindBy(id ="last_4")
+    @FindBy(id = "last_4")
     private WebElement lastName;
 
     @FindBy(id = "input_46")
@@ -44,13 +45,18 @@ public class VisaRegistrationPage extends Base {
     @FindBy(id = "requestnumber")
     private WebElement requestNumber;
 
-    public void goTo(){
+    public void goTo() {
         this.driver.get("https://vins-udemy.s3.amazonaws.com/sb/visa/udemy-visa.html");
     }
 
     public void setNames(String firstName, String lastName) {
         this.firstName.sendKeys(firstName);
         this.lastName.sendKeys(lastName);
+    }
+
+    public void setCountryFromAndTo(String countryFrom, String countryTo) {
+        new Select(this.fromCountry).selectByValue(countryFrom);
+        new Select(this.toCountry).selectByValue(countryTo);
     }
 
     @Override
