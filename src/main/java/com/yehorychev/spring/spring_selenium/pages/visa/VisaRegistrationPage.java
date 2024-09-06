@@ -76,8 +76,17 @@ public class VisaRegistrationPage extends Base {
         this.comments.sendKeys(comments);
     }
 
+    public void submit() {
+        this.submit.click();
+    }
+
+    public String getConfirmationNumber() {
+        this.wait.until((d) -> this.requestNumber.isDisplayed());
+        return this.requestNumber.getText();
+    }
+
     @Override
     public boolean isLoaded() {
-        return false;
+        return this.wait.until((d) -> this.firstName.isDisplayed());
     }
 }
