@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.LocalDate;
+
 @Page
 public class VisaRegistrationPage extends Base {
 
@@ -57,6 +59,12 @@ public class VisaRegistrationPage extends Base {
     public void setCountryFromAndTo(String countryFrom, String countryTo) {
         new Select(this.fromCountry).selectByValue(countryFrom);
         new Select(this.toCountry).selectByValue(countryTo);
+    }
+
+    public void setBirthDate(LocalDate localDate) {
+        new Select(this.year).selectByVisibleText(String.valueOf(localDate.getYear()));
+        new Select(this.day).selectByVisibleText(String.valueOf(localDate.getDayOfMonth()));
+        new Select(this.month).selectByValue(localDate.getMonth().toString());
     }
 
     @Override
