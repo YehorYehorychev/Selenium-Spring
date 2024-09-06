@@ -13,6 +13,7 @@ public class Customer {
 
     @Id
     private Integer id;
+
     private String fromCountry;
     private String toCountry;
     private Date dob;
