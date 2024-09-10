@@ -10,4 +10,11 @@
             <class name="com.yehorychev.spring.spring_selenium.googletest.SecondGoogleTest"/>
         </classes>
     </test>
+    <test name="SQLTest">
+        <parameter name="dobFrom" value="1995-01-01"/>
+        <parameter name="dobTo" value="1999-01-01"/>
+        <classes>
+            <class name="com.yehorychev.spring.spring_selenium.visatest.UserVisaTest"/>
+        </classes>
+    </test>
 </suite>
