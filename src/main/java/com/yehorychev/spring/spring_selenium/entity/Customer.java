@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name = "customer")
+//@Table(name = "customer")
 public class Customer {
 
     @Id
