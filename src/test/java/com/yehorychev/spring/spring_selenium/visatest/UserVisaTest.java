@@ -5,9 +5,11 @@ import com.yehorychev.spring.spring_selenium.entity.Customer;
 import com.yehorychev.spring.spring_selenium.pages.visa.VisaRegistrationPage;
 import com.yehorychev.spring.spring_selenium.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.testng.ITestContext;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.List;
+import java.sql.Date;
 
 public class UserVisaTest extends SpringBaseTestNGTest {
 
@@ -17,22 +19,27 @@ public class UserVisaTest extends SpringBaseTestNGTest {
     @Autowired
     private CustomerRepository customerRepository;
 
-    @Test
-    public void visaTest() {
-        List<Customer> customers = this.customerRepository.findAll()
+    @Test(dataProvider = "getData")
+    public void visaTest(Customer customer) {
+        this.registrationPage.goTo();
+        this.registrationPage.setNames(customer.getFirstName(), customer.getLastName());
+        this.registrationPage.setCountryFromAndTo(customer.getFromCountry(), customer.getToCountry());
+        this.registrationPage.setBirthDate(customer.getDob().toLocalDate());
+        this.registrationPage.setContactDetails(customer.getEmail(), customer.getPhone());
+        this.registrationPage.setComments(customer.getComments());
+        this.registrationPage.submit();
+
+        System.out.println(this.registrationPage.getConfirmationNumber());
+    }
+
+    @DataProvider
+    public Object[] getData(ITestContext context) {
+        return this.customerRepository
+                .findByDobBetween(
+                        Date.valueOf(context.getCurrentXmlTest().getParameter("dobFrom")),
+                        Date.valueOf(context.getCurrentXmlTest().getParameter("dobTo")))
                 .stream()
                 .limit(3)
-                .toList();
-        for (Customer c : customers) {
-            this.registrationPage.goTo();
-            this.registrationPage.setNames(c.getFirstName(), c.getLastName());
-            this.registrationPage.setCountryFromAndTo(c.getFromCountry(), c.getToCountry());
-            this.registrationPage.setBirthDate(c.getDob().toLocalDate());
-            this.registrationPage.setContactDetails(c.getEmail(), c.getPhone());
-            this.registrationPage.setComments(c.getComments());
-            this.registrationPage.submit();
-
-            System.out.println(this.registrationPage.getConfirmationNumber());
-        }
+                .toArray();
     }
 }
