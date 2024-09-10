@@ -12,6 +12,7 @@ public class UserVisaTest extends SpringBaseTestNGTest {
 
     @Test
     public void visaTest() {
-        System.out.println(this.customerRepository.findAll().size());
+        this.customerRepository.findById(85)
+                .ifPresent(user -> System.out.println(user.getFirstName()));
     }
 }
