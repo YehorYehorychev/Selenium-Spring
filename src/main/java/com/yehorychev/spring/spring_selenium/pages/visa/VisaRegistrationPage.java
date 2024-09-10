@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Page
 public class VisaRegistrationPage extends Base {
@@ -73,7 +74,7 @@ public class VisaRegistrationPage extends Base {
     }
 
     public void setComments(String comments) {
-        this.comments.sendKeys(comments);
+        this.comments.sendKeys(Objects.toString(comments, ""));
     }
 
     public void submit() {
