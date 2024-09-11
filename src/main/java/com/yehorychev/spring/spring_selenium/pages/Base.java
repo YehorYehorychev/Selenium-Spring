@@ -19,5 +19,9 @@ public abstract class Base {
         PageFactory.initElements(this.driver, this);
     }
 
+    public void quitBrowser() {
+        this.driver.quit();
+    }
+
     public abstract boolean isLoaded();
 }
