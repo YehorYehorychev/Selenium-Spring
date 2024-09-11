@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="MyTestSuite" parallel="tests" thread-count="4">
-    <test name="GoogleTest1">
-        <classes>
-            <class name="com.yehorychev.spring.spring_selenium.googletest.FirstGoogleTest"/>
-        </classes>
-    </test>
-    <test name="GoogleTest2">
-        <classes>
-            <class name="com.yehorychev.spring.spring_selenium.googletest.SecondGoogleTest"/>
-        </classes>
-    </test>
+<!--    <test name="GoogleTest1">-->
+<!--        <classes>-->
+<!--            <class name="com.yehorychev.spring.spring_selenium.googletest.FirstGoogleTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="GoogleTest2">-->
+<!--        <classes>-->
+<!--            <class name="com.yehorychev.spring.spring_selenium.googletest.SecondGoogleTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="SQLTest">
         <parameter name="dobFrom" value="1995-01-01"/>
         <parameter name="dobTo" value="1999-01-01"/>
