@@ -1,6 +1,7 @@
 package com.yehorychev.spring.spring_selenium.pages;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,10 +18,6 @@ public abstract class Base {
     @PostConstruct
     private void init() {
         PageFactory.initElements(this.driver, this);
-    }
-
-    public void quitBrowser() {
-        this.driver.quit();
     }
 
     public abstract boolean isLoaded();

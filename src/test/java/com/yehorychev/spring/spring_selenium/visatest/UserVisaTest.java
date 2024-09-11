@@ -32,7 +32,6 @@ public class UserVisaTest extends SpringBaseTestNGTest {
         this.registrationPage.setContactDetails(customer.getEmail(), customer.getPhone());
         this.registrationPage.setComments(customer.getComments());
         this.registrationPage.submit();
-        this.registrationPage.quitBrowser();
 
         logger.info("Request confirmation number: " + this.registrationPage.getConfirmationNumber());
         System.out.println(this.registrationPage.getConfirmationNumber());
