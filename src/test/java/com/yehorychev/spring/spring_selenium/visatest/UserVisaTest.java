@@ -4,6 +4,8 @@ import com.yehorychev.spring.spring_selenium.SpringBaseTestNGTest;
 import com.yehorychev.spring.spring_selenium.entity.Customer;
 import com.yehorychev.spring.spring_selenium.pages.visa.VisaRegistrationPage;
 import com.yehorychev.spring.spring_selenium.repository.CustomerRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.ITestContext;
 import org.testng.annotations.DataProvider;
@@ -12,6 +14,8 @@ import org.testng.annotations.Test;
 import java.sql.Date;
 
 public class UserVisaTest extends SpringBaseTestNGTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(UserVisaTest.class);
 
     @Autowired
     private VisaRegistrationPage registrationPage;
