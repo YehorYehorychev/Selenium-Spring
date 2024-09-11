@@ -1,0 +1,27 @@
+2024-09-10T17:37:32.071-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : Starting UserVisaTest using Java 17.0.11 with PID 3723 (/Users/yehor/IdeaProjects/spring-selenium/target/test-classes started by yehor in /Users/yehor/IdeaProjects/spring-selenium)
+2024-09-10T17:37:32.072-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : No active profile set, falling back to 1 default profile: "default"
+2024-09-10T17:37:32.106-07:00  WARN 3723 --- [TestNG-tests-1] o.s.c.a.AnnotationBeanNameGenerator      : Support for convention-based stereotype names is deprecated and will be removed in a future version of the framework. Please annotate the 'value' attribute in @com.yehorychev.spring.spring_selenium.kelvin.annotations.Window with @AliasFor(annotation=Component.class) to declare an explicit alias for @Component's 'value' attribute.
+2024-09-10T17:37:32.218-07:00  INFO 3723 --- [TestNG-tests-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10T17:37:32.236-07:00  INFO 3723 --- [TestNG-tests-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-09-10T17:37:32.427-07:00  INFO 3723 --- [TestNG-tests-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-10T17:37:32.487-07:00  INFO 3723 --- [TestNG-tests-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:efc541cb-2f41-45ff-a739-95922144a351 user=SA
+2024-09-10T17:37:32.487-07:00  INFO 3723 --- [TestNG-tests-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-10T17:37:32.505-07:00  INFO 3723 --- [TestNG-tests-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10T17:37:32.523-07:00  INFO 3723 --- [TestNG-tests-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10T17:37:32.534-07:00  INFO 3723 --- [TestNG-tests-1] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-10T17:37:32.631-07:00  INFO 3723 --- [TestNG-tests-1] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10T17:37:32.973-07:00  INFO 3723 --- [TestNG-tests-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10T17:37:32.982-07:00  INFO 3723 --- [TestNG-tests-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10T17:37:33.121-07:00  INFO 3723 --- [TestNG-tests-1] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-10T17:37:33.128-07:00  INFO 3723 --- [TestNG-tests-1] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as /Users/yehor/.cache/selenium/chromedriver/mac-arm64/128.0.6613.137/chromedriver
+2024-09-10T17:37:33.827-07:00  WARN 3723 --- [TestNG-tests-1] o.o.selenium.devtools.CdpVersionFinder   : Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+2024-09-10T17:37:34.094-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : Started UserVisaTest in 2.135 seconds (process running for 2.566)
+2024-09-10T17:37:35.461-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.pages.visa.VisaRegistrationPage  : Getting names: Sixta
+2024-09-10T17:37:37.383-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : Request confirmation number: 8355881
+2024-09-10T17:37:37.521-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.pages.visa.VisaRegistrationPage  : Getting names: Darren
+2024-09-10T17:37:39.325-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : Request confirmation number: 1003662
+2024-09-10T17:37:39.458-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.pages.visa.VisaRegistrationPage  : Getting names: Edward
+2024-09-10T17:37:41.263-07:00  INFO 3723 --- [TestNG-tests-1] c.y.s.s.visatest.UserVisaTest            : Request confirmation number: 4210287
+2024-09-10T17:37:41.283-07:00  INFO 3723 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10T17:37:41.285-07:00  INFO 3723 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-10T17:37:41.285-07:00  INFO 3723 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
