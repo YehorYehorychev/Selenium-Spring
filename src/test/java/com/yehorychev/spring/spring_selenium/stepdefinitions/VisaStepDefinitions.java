@@ -6,13 +6,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.StringUtils;
 import org.testng.Assert;
 
 import java.time.LocalDate;
 
-@SpringBootTest
 public class VisaStepDefinitions {
 
     @LazyAutowired

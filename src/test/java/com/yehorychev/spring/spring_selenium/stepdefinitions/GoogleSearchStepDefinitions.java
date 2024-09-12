@@ -2,14 +2,11 @@ package com.yehorychev.spring.spring_selenium.stepdefinitions;
 
 import com.yehorychev.spring.spring_selenium.kelvin.annotations.LazyAutowired;
 import com.yehorychev.spring.spring_selenium.pages.google.GooglePage;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.Assert;
 
-@SpringBootTest
 public class GoogleSearchStepDefinitions {
 
     @LazyAutowired
