@@ -4,7 +4,7 @@ Feature: Google search
     Given I am on the google page
     When I enter "<keyword>" as a keyword
     And I click on the search button
-    Then I should see at least "<count>" results
+    Then I should see at least <count>  results
 
     Examples:
     | keyword     | count       |

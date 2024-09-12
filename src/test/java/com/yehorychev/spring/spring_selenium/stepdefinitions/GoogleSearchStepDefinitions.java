@@ -7,18 +7,22 @@ import io.cucumber.java.en.When;
 
 public class GoogleSearchStepDefinitions {
     @Given("I am on the google page")
-    public void iAmOnTheGooglePage() {
+    public void launchWebSite() {
+
     }
 
     @When("I enter {string} as a keyword")
-    public void iEnterAsAKeyword(String arg0) {
+    public void enterKeyword(String keyword) {
+
     }
 
     @And("I click on the search button")
-    public void iClickOnTheSearchButton() {
+    public void clickSearch() {
+
     }
 
-    @Then("I should see at least {string} results")
-    public void iShouldSeeAtLeastResults(String arg0) {
+    @Then("I should see at least {int} results")
+    public void verifyResults(int count) {
+
     }
 }
