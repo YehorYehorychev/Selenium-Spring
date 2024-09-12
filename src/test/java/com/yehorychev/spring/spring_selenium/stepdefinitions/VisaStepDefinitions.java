@@ -54,7 +54,7 @@ public class VisaStepDefinitions {
 
     @Then("I should see get the confirmation number")
     public void verifyConfirmationNumber() {
-        boolean isEmpty = StringUtils.hasText(this.registrationPage.getConfirmationNumber().trim());
-        Assert.assertFalse(isEmpty);
+        boolean isNotEmpty = StringUtils.hasText(this.registrationPage.getConfirmationNumber().trim());
+        Assert.assertTrue(isNotEmpty);
     }
 }

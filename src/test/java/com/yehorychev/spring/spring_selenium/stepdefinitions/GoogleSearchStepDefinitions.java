@@ -5,8 +5,12 @@ import com.yehorychev.spring.spring_selenium.pages.google.GooglePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.spring.CucumberContextConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.Assert;
 
+@CucumberContextConfiguration
+@SpringBootTest
 public class GoogleSearchStepDefinitions {
 
     @LazyAutowired
