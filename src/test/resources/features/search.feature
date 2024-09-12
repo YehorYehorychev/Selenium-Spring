@@ -1,5 +1,6 @@
 Feature: Google search
 
+  @Regression
   Scenario Outline: I need to search on google.com website
     Given I am on the google page
     When I enter "<keyword>" as a keyword

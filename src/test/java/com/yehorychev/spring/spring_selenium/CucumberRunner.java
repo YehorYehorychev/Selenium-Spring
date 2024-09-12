@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "classpath:features",
         glue = "com.yehorychev.spring.spring_selenium.stepdefinitions",
+        tags = "@Regression",
         plugin = {
                 "pretty",
                 "html:test-output/reports/cucumber-report.html"
