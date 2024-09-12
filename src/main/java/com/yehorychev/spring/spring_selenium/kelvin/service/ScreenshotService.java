@@ -5,6 +5,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileCopyUtils;
@@ -18,6 +19,9 @@ import java.util.Date;
 @Service
 @Lazy
 public class ScreenshotService {
+
+    @Autowired
+    private ApplicationContext ctx;
 
     @Autowired
     private WebDriver driver;
@@ -39,5 +43,9 @@ public class ScreenshotService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public byte[] getScreenshot() {
+        return this.ctx.getBean(TakesScreenshot.class).getScreenshotAs(OutputType.BYTES);
     }
 }
