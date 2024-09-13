@@ -60,21 +60,24 @@ Run the container:
 docker run -it selenium-spring
 ```
 
-- Project Structure
--- src/main/java:
+### Project Structure
 
-- Contains the Java source files, including the configuration classes (e.g., WebDriverConfig), page objects, and services.
--- src/test/java:
+- **src/main/java**:
+  - Contains the Java source files, including the configuration classes (e.g., `WebDriverConfig`), page objects, and services.
+  
+- **src/test/java**:
+  - Contains Cucumber step definitions, test runners, and feature files for BDD scenarios.
 
- - Contains Cucumber step definitions, test runners, and feature files for BDD scenarios.
--- resources:
+- **resources**:
+  - Holds the application properties, test data, and Cucumber feature files.
 
-- Holds the application properties, test data, and Cucumber feature files.
--- target:
+- **target**:
+  - Automatically generated directory after Maven builds, including reports and logs.
 
-- Automatically generated directory after Maven builds, including reports and logs.
--- Reports
-Test results are saved in the target/test-output folder. You can view the test report by opening cucumber-report.html in a browser.
+### Reports
+
+Test results are saved in the `target/test-output` folder. You can view the test report by opening `cucumber-report.html` in a browser.
+
 
 ## Contribution
 
