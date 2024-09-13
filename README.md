@@ -76,7 +76,8 @@ target:
 Reports
 Test results are saved in the target/test-output folder. You can view the test report by opening cucumber-report.html in a browser.
 
-Contribution
+## Contribution
+
 Feel free to fork this repository, create a feature branch, and send pull requests for any improvements or bug fixes.
 
 
