@@ -20,6 +20,8 @@ import java.util.Date;
 @Lazy
 public class ScreenshotService {
 
+    // Screenshot Service
+
     @Autowired
     private ApplicationContext ctx;
 

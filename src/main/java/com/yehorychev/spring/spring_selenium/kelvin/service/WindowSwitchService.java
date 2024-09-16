@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class WindowSwitchService {
 
+    // Window-Switcher Service
+
     @Autowired
     private ApplicationContext ctx;
 
