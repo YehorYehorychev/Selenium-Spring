@@ -1,6 +1,6 @@
 ## 🚀 Selenium-Spring Boot Framework
 
-Welcome to the **Java Selenium Spring Boot** framework! This repository is built for automated testing of web applications. With **Selenium WebDriver**, **Cucumber**, and **Spring Boot**, this framework is ready to tackle a wide range of test scenarios and even supports parallel execution using **TestNG**.
+Welcome to the **Java Selenium Spring-Boot** framework! This repository is built for automated testing of web applications. With **Selenium WebDriver**, **Cucumber**, and **Spring Boot**, this framework is ready to tackle a wide range of test scenarios and even supports parallel execution using **TestNG**.
 
 ### ✨ Features
 
