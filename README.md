@@ -23,7 +23,7 @@ Before you begin, make sure you have these installed:
 
 #### Clone the Repository
 
-Get the code up and running with these simple steps:
+Get the code up and running with these simple step:
 
 ```bash
 git clone https://github.com/YehorYehorychev/Selenium-Spring.git
